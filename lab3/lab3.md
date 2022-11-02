@@ -63,7 +63,7 @@ timeout 20 ./tcpcbr 2;   sleep 5  # send at 2 MBps
 timeout 20 ./tcpcbr 3
 ```
 
-4. Check the &#34;I/O Graphs&#34; window to ensure that your program sends at the bitrate we expected. For your reference, a sample screenshot for the &#34;I/O Graphs&#34; window is shown below.&lt;br/&gt;
+4. Check the &#34;I/O Graphs&#34; window to ensure that your program sends at the bitrate we expected. For your reference, a sample screenshot for the &#34;I/O Graphs&#34; window is shown below.
 ![I/O Graphs](https://inp111.zoolab.org/lab03.2/io_graphs.png)
 
 5. Grading Policy:
