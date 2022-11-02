@@ -2,9 +2,7 @@
 
 This lab aims to be familiar with ``docker`` and ``docker-compose`` commands. Please follow the instructions to complete this lab. Once you have completed everything, please demo your implementation to a TA.
 
->**Note**
-You can do everything either on your own laptop or on the classroom desktop PC.
-
+> You can do everything either on your own laptop or on the classroom desktop PC.
 
 ## Description
 
@@ -35,8 +33,7 @@ Please follow the steps listed below to complete this lab.
 
 This lab aims to practice simple packet analysis using ``tcpdump`` (or ``wireshark``).
 
->**Note**
-Most UNIX operating systems have the packages for ``tcpdump`` and ``wireshark``. Nevertheless, wireshark can be downloaded from its [official site](https://www.wireshark.org/download.html).
+> Most UNIX operating systems have the packages for ``tcpdump`` and ``wireshark``. Nevertheless, wireshark can be downloaded from its [official site](https://www.wireshark.org/download.html).
 
 ## Description
 
@@ -44,8 +41,7 @@ Please follow the steps listed below to complete this lab.
 
 1. Run ``tcpdump`` (or ``wireshark``) in your preferred environment.
 
->**Note**
-Please notice that you ***should not*** capture packets inside a docker because the docker could strip TOS and TTL values required by this challenge. Instead, please capture packets and then save captured packets in your host machine. 
+> Please notice that you ***should not*** capture packets inside a docker because the docker could strip TOS and TTL values required by this challenge. Instead, please capture packets and then save captured packets in your host machine. 
 
 2. Connect to the challenge server by running ``nc inp111.zoolab.org 10001`` also from your preferred environment. This step can be done either inside or outside a docker.
 
@@ -53,11 +49,9 @@ Please notice that you ***should not*** capture packets inside a docker because 
 
 1. Find out that magic packet and decode the TCP payload encoded in BASE64.
 
->**Note**
-You may know that TCP may send successive data requested by ``send`` system calls in the same packet. Once it happens, you may be unable to identify the magic packet from the corresponding TCP flow. In that case, you may run the ``nc`` client multiple times to collect several TCP flows and then perform per-flow analysis to learn how the magic packet is hidden in the flow.
+>You may know that TCP may send successive data requested by ``send`` system calls in the same packet. Once it happens, you may be unable to identify the magic packet from the corresponding TCP flow. In that case, you may run the ``nc`` client multiple times to collect several TCP flows and then perform per-flow analysis to learn how the magic packet is hidden in the flow.
 
->**Note**
-If you have difficulties capturing packets, you may consider using our captured pcap file from [here](https://inp111.zoolab.org/lab01.2/lab_tcpdump.pcap). You can check the TTL values for packets stored in the pcap file. The SHA1 value for the pcap file is:&lt;br/&gt; ``ba332a3c528d68c5c6874aae681929199dbb6c98``
+> If you have difficulties capturing packets, you may consider using our captured pcap file from [here](https://inp111.zoolab.org/lab01.2/lab_tcpdump.pcap). You can check the TTL values for packets stored in the pcap file. The SHA1 value for the pcap file is:&lt;br/&gt; ``ba332a3c528d68c5c6874aae681929199dbb6c98``
 
 ## Demonstration
 
@@ -67,5 +61,4 @@ If you have difficulties capturing packets, you may consider using our captured 
 
 1. [15%] If you can decode the content using your implemented script (or program), you can get 100% of the points.
 
->**Note**
-Note that your script (or program) can use a saved ``pcap`` file created by ``tcpdump`` or ``wireshark`` as its input.
+> Note that your script (or program) can use a saved ``pcap`` file created by ``tcpdump`` or ``wireshark`` as its input.
