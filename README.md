@@ -33,3 +33,13 @@
 12/29	<no lab, no final, no class>
   
 01/05	hw2 due <in-class homework demo>
+
+
+### Update 
+
+lab6 server unfinished
+
+lab7 webcrawer unfinished
+
+lab8 unfinished
+
